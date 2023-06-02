@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'inter',sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+:root{
+    --main-color:#0085FF;
+}
+
+body{
+    background: #fff;
+    overflow: hidden;
+}
+ 
+nav{
+    
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    border-right: 0.5px dashed;
+    width: 350px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    overflow-y: scroll;
+    overflow: hidden;
+ 
+}
+
+.user{
+    text-align: center;
+    display: flex;
+    padding-bottom: 15px;
+    border: 0.3px  dashed;
+    border-right: none;
+    
+}
+.user img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-top: 25px;
+    margin-left: 10px;
+} 
+.user span{
+   font-size: 16px;
+    padding: 15px;
+    font-weight: 700;
+    margin-top: 15px;
+
+}
+a{
+    position: relative;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    display: table;
+    padding: 10px;
+     
+}
+.bx{
+    position: relative;
+    width: 45px;
+    height: 24px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+   
+
+   
+}
+.nav-item{
+    position: relative;
+    top: 12px;
+    font-weight: 500;
+   
+   
+}
+
+.logout{
+    position: absolute;
+    bottom:0 ;
+    margin-bottom:20px ;
+    
+}
+.uploadFile{
+    margin-left: 350px;
+}
+header {
+    width: 100%;
+    height: 87px;
+    border-bottom: .3px dashed;
+}
+.uploadFile h2{
+    position: relative;
+    left: 20px;
+    bottom: 2px;
+    top: 48px;
+    font-size: 24px;
+    font-weight: 500;
+    
+}
+.file{
+
+    position: absolute;
+    top: 20px;
+}
+.boxes{
+    display: grid;
+    width: 100%;
+    height: 160px;
+    padding-top: 20px;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1.4rem;
+    margin-top: 4rem;
+    margin-left: 20px;
+}
+.box{
+    text-align: center;
+    width: 230px;
+    height: 160px;
+    border-radius: 13px;
+   
+    border: 1px dashed;
+}
+.box .bx{
+    position: relative;
+    font-weight: 500;
+    font-size: 40px;
+}
+.box span{
+    position: relative;
+    left: 4px;
+    top: 10px;
+    margin: 4px  10px;
+
+    font-size: 1.2rem;
+}
+.box h4{
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    left: -76px;
+    top: 15px;
+  
+}
+.box time{
+    font-size: 15px;
+    font-weight: 500;
+}
+.box .bi{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 200px;
+
+}
+.box .bi-cloud-download{
+    position: absolute;
+    left: 20px;
+    top:10px;
+    width: 73px;
+    height: 27px;
+    background-color: var(--main-color);
+    border:none;
+    padding-top :3px;
+    color:white;
+    border-radius: 5px;
+}

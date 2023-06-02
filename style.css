@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'inter',sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+:root{
+    --main-color:#0085FF;
+}
+
+body{
+    background: #fff;
+
+}
+ 
+nav{
+    
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    border-right: 0.5px solid;
+    width: 350px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    overflow-y: scroll;
+    overflow: hidden;
+ 
+}
+
+.user{
+    text-align: center;
+    display: flex;
+    padding-bottom: 15px;
+    border-bottom: 0.2px solid;
+    
+}
+.user img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-top: 25px;
+    margin-left: 10px;
+} 
+.user span{
+   font-size: 16px;
+    padding: 15px;
+    font-weight: 700;
+    margin-top: 15px;
+
+}
+a{
+    position: relative;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    display: table;
+    padding: 10px;
+     
+}
+.bx{
+    position: relative;
+    width: 45px;
+    height: 24px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+   
+
+   
+}
+.nav-item{
+    position: relative;
+    top: 12px;
+    font-weight: 500;
+   
+   
+}
+
+.logout{
+    position: absolute;
+    bottom:0 ;
+    margin-bottom:20px ;
+    
+}
+.fileUpload .upload{
+   max-width: 50%;
+    height: 240px;
+    margin: 200px 129px 422px 494px;
+    border:2px dashed;
+  
+    
+}
+.upload{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upload img{
+    padding-left: 40px;
+    width: 196px;
+    height: 137.08px;
+    font-size: 10rem;
+}
+.upload h2{
+   
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.progress{
+    position: absolute;
+    top: 28rem;
+    width: 50%;
+    border: 10px solid #ffffff;
+    border-radius: 15px;
+}
+.progress h2{
+    font-size: 20px;
+    padding-bottom: 10px;
+
+}
+.progress .btn{
+    width:209px;
+    height: 45px;
+    position: absolute;
+    left: 200px;
+    top: 80px;
+    background: var(--main-color);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 32px;
+    color: white;
+    border: none;
+
+}
+.progress .color{
+    position: absolute;
+    background-color: var(--main-color);
+    width: 0px;
+    height: 5px;
+    border-radius: 15px;
+    animation: progres 4s infinite linear;    
+}
+@keyframes progres{
+    0%{
+      width: 0%;
+    }
+    25%{
+        width: 50%;
+    }
+    50%{
+        width: 75%;
+    }
+    75%{
+        width: 85%;
+    }
+    100%{
+        width: 100%;
+    }
+};
